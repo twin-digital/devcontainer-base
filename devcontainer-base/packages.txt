@@ -1,0 +1,7 @@
+curl
+git
+jq
+nano
+tar
+unzip
+wget

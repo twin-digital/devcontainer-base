@@ -1,0 +1,7 @@
+#!/usr/bin/env /bin/bash
+
+packageList=${1?Parameter missing - path to packages file}
+
+sudo apt-get update
+cat "${1}" | sudo xargs apt-get install -y
+apt-get clean
