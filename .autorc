@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    "git-tag",
+    "released",
+    "slack"
+  ],
+  "owner": "skleinjung",
+  "repo": "devcontainers",
+  "name": "Twin-Bot",
+  "email": "twinbot@twindigital.io"
+}
