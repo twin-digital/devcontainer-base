@@ -1,5 +1,5 @@
 {
 	"build": { 
-		"dockerfile": "../devcontainer-base/Dockerfile" 
+		"dockerfile": "Dockerfile" 
 	}
 }
