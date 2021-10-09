@@ -33,6 +33,7 @@ jobs:
           tag_prefix: "v"
           major_pattern: "semver:major"
           minor_pattern: "semver:minor"
+          format: "${major}.${minor}.${patch}-next.${increment}"
           change_path: "container"
 
       # - name: Set up Docker Buildx
