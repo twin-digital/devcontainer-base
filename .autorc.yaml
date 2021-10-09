@@ -1,0 +1,10 @@
+author: 'Twin-Bot <twinbot@twindigital.io>'
+
+# repo coordinates
+owner: skleinjung
+repo: devcontainers
+
+plugins:
+ - git-tag
+ - released
+ - slack
