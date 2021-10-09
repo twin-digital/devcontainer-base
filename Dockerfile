@@ -3,8 +3,8 @@ FROM ubuntu:20.04
 # Suppress an apt-key warning about standard out not being a terminal. Use in this script is safe.
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn
 
-COPY scripts /usr/local/bin
-COPY packages.txt /usr/local/etc/devcontainer/
+COPY container/scripts /usr/local/bin
+COPY container/packages.txt /usr/local/etc/devcontainer/
 
 # install sudo, scripts, and other packages from setup-files/packages.txt
 RUN apt-get update && apt-get install -y sudo \
