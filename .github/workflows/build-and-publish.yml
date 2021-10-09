@@ -6,6 +6,8 @@ on:
       - .github/**
       - container/**
   push:
+    branches:
+      - main
     paths:
       - .github/**
       - container/**
