@@ -31,8 +31,8 @@ jobs:
         name: Calculate version
         with:
           tag_prefix: "v"
-          major_pattern: "semver:major"
-          minor_pattern: "semver:minor"
+          major_pattern: "SemVer: major"
+          minor_pattern: "SemVer: minor"
           format: "${major}.${minor}.${patch}-next.${increment}"
           # change_path: "container"
       
