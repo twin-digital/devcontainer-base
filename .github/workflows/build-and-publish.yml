@@ -58,9 +58,9 @@ jobs:
             type=ref,event=tag
             type=ref,event=pr
             type=schedule
-            type=semver,pattern={{version}},value=v${{ steps.semver.outputs.version }}
-            type=semver,pattern={{major}}.{{minor}},value=v${{ steps.semver.outputs.version }}
-            type=semver,pattern={{major}},value=v${{ steps.semver.outputs.version }}
+            type=semver,pattern={{version}},enable=true,value=v${{ steps.semver.outputs.version }}
+            type=semver,pattern={{major}}.{{minor}},enable=true,value=v${{ steps.semver.outputs.version }}
+            type=semver,pattern={{major}},enable=true,value=v${{ steps.semver.outputs.version }}
             type=sha,format=long,prefix=
 
       - name: Build image
