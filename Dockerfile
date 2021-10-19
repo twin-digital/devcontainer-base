@@ -16,3 +16,5 @@ RUN useradd --create-home --shell /bin/bash --uid 1000 --no-log-init devuser
 RUN adduser devuser sudo
 RUN echo '%devuser ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER devuser
+
+WORKDIR /home/devuser
