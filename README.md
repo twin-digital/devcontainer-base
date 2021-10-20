@@ -8,6 +8,7 @@ This container is built on an `ubuntu:20.04` base, and provides the following pa
 
 * curl
 * git
+* gpg
 * jq
 * nano
 * tar
